@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Ellen as your President</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script>
+        window.addEventListener("load", function(event) {
+            var form = document.getElementById('donateBtn');
+            var donateAmount = document.getElementById('donate');
+
+            form.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                alert('We store all your credit card details on our server. Thank you for your ' + donateAmount.value + ' donation :)');
+            })
+        });
+    </script>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="speeches.html">Speeches</a></li>
+        <li><a href="biography.html">Biography</a></li>
+        <select name="language" id="language">
+            <option selected="">English</option>
+            <option>German</option>
+            <option>Espanol</option>
+            <option>Italiano</option>
+            <option>Francais</option>
+        </select>
+    </ul>
+</nav>
+<header>
+    <h1>Ellen as your President</h1>
+    <div>
+   	<span style="position: absolute; left: 150px">
+   	Trust the young generation.
+    </span>
+    </div>
+</header>
+<br>
+<p>FOR YOUR FUTURE</p>
+<p>The next generation needs to be supported. We need your trust!</p>
+<span class="custom-select">
+    <select name="donate" id="donate">
+        <option selected="" disabled>$</option>
+        <option>50$</option>
+        <option>75$</option>
+        <option>100$</option>
+        <option>150$</option>
+    </select>
+        <input type="button" value="Donate" id="donateBtn"/>
+</span>
+<div class="content">
+    <p>Keeping our voters up to date</p>
+    <img src="img/social-media-platforms.jpg"/>
+    <p>The world changes everyday. Even small decisions can change a lot. But how do you know what decisions
+        are made
+        by someone you vote? We think our voters should know a lot more about everything. But how? These days
+        social media is a big thing. People post everything and sometimes it's very unnecessary. But social media is
+        a great way to keep our voters up to date and to give them a taste of how we work and what we do.</p>
+</div>
+<div id="something">
+  <p id="vision">Our vision</p>
+  <p id="appeal">We want a  world where everyone has equal rights. No one should starve because we have enough food in the world.
+    We want to change something. Raise your voice to change something. Every voice counts.</p>
+</div>
+<div>
+    <p>LATEST NEWS</p>
+<p>Teenagers from the age of 14 are allowed to run for presidency.</p>
+    <p id="teenagerpresident">The german government decided that it's time for the first teenager president. After lots of discussions it's official.
+        There will be a probation period of 3 months and if everything is alright we can welcome our first teenager president.</p>
+</div>
+<footer>
+    2020 POLITIST
+</footer>
+</body>
+</html>
