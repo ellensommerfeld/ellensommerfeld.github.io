@@ -40,7 +40,7 @@ option:hover{
 }
 
 header {
-    background-image: url(img/ellen.jpg), url(img/bg.jpg);
+    background-image: url(img/ellen.png), url(img/bg.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: 850px -260px, top left;
     background-size: 1200px 1500px, 100% 100%;
