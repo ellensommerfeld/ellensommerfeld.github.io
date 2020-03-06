@@ -3,14 +3,17 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Ellen as your President</title>
     <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script>
-        window.addEventListener("load", function(event) {
+        window.addEventListener("load", function (event) {
             var form = document.getElementById('donateBtn');
             var donateAmount = document.getElementById('donate');
 
-            form.addEventListener('click', function(e) {
+            form.addEventListener('click', function (e) {
                 e.preventDefault();
                 e.stopPropagation();
                 alert('We store all your credit card details on our server. Thank you for your ' + donateAmount.value + ' donation :)');
@@ -19,21 +22,41 @@
     </script>
 </head>
 <body>
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="speeches.html">Speeches</a></li>
-        <li><a href="biography.html">Biography</a></li>
-        <select name="language" id="language">
-            <option selected="">English</option>
-            <option>German</option>
-            <option>Espanol</option>
-            <option>Italiano</option>
-            <option>Francais</option>
-        </select>
-    </ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">About </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Contact </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Speeches </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Biography </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdowntoggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Language
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Deutsch</a>
+                    <a class="dropdown-item" href="#">English</a>
+                    <a class="dropdown-item" href="#">Espanol</a>
+                    <a class="dropdown-item" href="#">Francais</a>
+                    <a class="dropdown-item" href="#">Italiano</a>
+                </div>
+        </ul>
+    </div>
 </nav>
 <header>
     <h1>Ellen as your President</h1>
@@ -46,8 +69,8 @@
 <br>
 <p>FOR YOUR FUTURE</p>
 <p>The next generation needs to be supported. We need your trust!</p>
-<span class="custom-select">
     <select name="donate" id="donate">
+        <span class="custom-select">
         <option selected="" disabled>$</option>
         <option>50$</option>
         <option>75$</option>
@@ -66,18 +89,30 @@
         a great way to keep our voters up to date and to give them a taste of how we work and what we do.</p>
 </div>
 <div id="something">
-  <p id="vision">Our vision</p>
-  <p id="appeal">We want a  world where everyone has equal rights. No one should starve because we have enough food in the world.
-    We want to change something. Raise your voice to change something. Every voice counts.</p>
+    <p id="vision">Our vision</p>
+    <p id="appeal">We want a world where everyone has equal rights. No one should starve because we have enough food in
+        the world.
+        We want to change something. Raise your voice to change something. Every voice counts.</p>
 </div>
 <div>
-    <p>LATEST NEWS</p>
-<p>Teenagers from the age of 14 are allowed to run for presidency.</p>
-    <p id="teenagerpresident">The german government decided that it's time for the first teenager president. After lots of discussions it's official.
-        There will be a probation period of 3 months and if everything is alright we can welcome our first teenager president.</p>
+    <p id="news">LATEST NEWS</p>
+    <p>Teenagers from the age of 14 are allowed to run for presidency.</p>
+    <p id="teenagerpresident">The german government decided that it's time for the first teenager president. After lots
+        of discussions it's official.
+        There will be a probation period of 3 months and if everything is alright we can welcome our first teenager
+        president.</p>
 </div>
 <footer>
-    2020 POLITIST
+    Made with &#128150 in 2020 POLITIST
 </footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 </html>

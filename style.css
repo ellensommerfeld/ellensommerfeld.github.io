@@ -5,30 +5,24 @@ html {
     background-size: cover;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
+.navbar {
     padding: 0;
-    overflow: hidden;
-    background-color: #3a5c8b;
-    font-family: Verdana serif;
-    font-size: 20px
 }
 
-nav ul li {
-    float: left;
+.bg-light {
+    background-color: #5d7d8b !important;
 }
 
-nav ul li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 16px;
-    margin-left: 220px;
+
+nav div ul li:first-child {
+    margin-left: 300px;
+
 }
 
-nav ul li a:hover {
-    background-color: #5d7d8b;
+.nav-item {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: Helvetica Neue, serif;
 }
 
 #language {
@@ -38,7 +32,11 @@ nav ul li a:hover {
     padding: 15px;
     font-size: 15px;
     font-weight: bold;
-    font-family: Verdana serif;
+    font-family: Helvetica Neue, serif;
+}
+
+option:hover{
+    background-color: linen;
 }
 
 header {
@@ -47,7 +45,7 @@ header {
     background-position: 850px -260px, top left;
     background-size: 1200px 1500px, 100% 100%;
     border: solid 1px;
-    font-family: Verdana serif;
+    font-family: Helvetica Neue, serif;
     height: 614px;
     font-size: 30px
 }
@@ -78,6 +76,10 @@ header span {
     font-size: 35px
 }
 
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
 footer {
     padding: 10px;
     font-family: Consolas, serif;
@@ -96,14 +98,14 @@ body div {
 }
 
 body p {
-    font-family: Verdana serif;
+    font-family: Helvetica Neue, serif;
     font-size:  50px;
     text-align: center;
     color: #13628b;
 }
 
 body form {
-    font-family: Verdana serif;
+    font-family: Helvetica Neue, serif;
     padding: 5cm;
 }
 
@@ -132,7 +134,12 @@ html, body {
 body input {
     width: 110px;
     font-size: 30px;
-    font-family: Verdana serif;
+    font-family: Helvetica Neue, serif;
+}
+
+#donateBtn {
+    background-color: #3a5c8b;
+    height: 67px;
 }
 
 footer {
@@ -144,6 +151,7 @@ footer {
     bottom: 5px;
     font-family: Verdana serif;
     margin-top: 50px;
+    text-align: center;
 }
 
 .bordered-image {
@@ -189,7 +197,7 @@ footer {
 
 
 #something {
-    width: 95%;
+    width: 100%;
     padding: 20px;
     overflow: hidden;
     margin-top: 300px;
@@ -201,7 +209,7 @@ footer {
     float: left;
     width: 800px;
     height: 450px;
-    font-family: Verdana serif;
+    font-family: Helvetica Neue, serif;
     font-size: 80px;
 }
 
@@ -210,15 +218,18 @@ footer {
     margin: 200px 0 0;
     text-align: left;
     font-size: 35px;
-    font-family: Verdana serif;
+    font-family: Helvetica Neue, serif;
+    margin-right: 100px;
 }
 
 #teenagerpresident {
     display: block;
     margin: 150px 0 0;
     text-align:left;
+    padding-left: 100px;
+    padding-right: 100px;
     font-size: 35px;
-    font-family: Verdana serif;
+    font-family: Helvetica Neue, serif;
 }
 
 header nav {
@@ -238,4 +249,9 @@ header nav li {
 
 .result .title {
     font-weight: bold;
+}
+
+#news {
+    margin-top: 70px;
+    margin-bottom: 50px;
 }
